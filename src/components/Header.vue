@@ -1,5 +1,5 @@
 <template>
-<div class="hero header">
+<div class="hero header is-flex-widescreen">
   <div class="columns">
     <div class="column is-two-fifths"></div>
     <div class="column">
@@ -36,29 +36,33 @@ export default {
 
 <style scoped>
 .header {
-  width: 1920px;
+  max-width: 1920px;
   height: 80px;
   border: 1px grey solid;
   text-align: center;
   color: #707070;
 }
+
 .title {
   width: 261px;
   height: 31px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .title .brand {
   font-weight: 400;
   color: #707070;
   font-size: 65%;
   margin-top: 12px;
 }
+
 .title .desc {
   font-weight: 400;
   color: #707070;
   font-size: 35%;
   padding-top: 10px;
 }
+
 .navigation {
   margin-top: 31px;
   margin-right: 228px;
