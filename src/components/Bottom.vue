@@ -17,6 +17,7 @@ export default {
 .bottom {
   background-color: #BBBBBB;
   text-align: center;
+  margin-top: 15px;
 }
 
 p {

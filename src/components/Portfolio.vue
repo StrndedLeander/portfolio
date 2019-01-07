@@ -98,10 +98,10 @@
               <div class="field">
                 <label class="label">Fill out form</label>
                 <div class="control">
-                  <input class="input" type="text" placeholder="Your Name">
+                  <input class="input" type="text" placeholder="Your Name" v-model="name">
                       </div>
                   <div class="control">
-                    <input class="input" type="text" placeholder="Your E-Mail Adress">
+                    <input class="input" type="text" placeholder="Your E-Mail Adress" v-model="email">
                       </div>
                     <div class="control">
                       <div class="select">
@@ -144,6 +144,9 @@
 </template>
 
 <script>
+import axios from 'axios'
+import config from '../emailService/config'
+
 export default {
   name: "Portfolio",
   data() {
@@ -154,7 +157,31 @@ export default {
       name: '',
       email: '',
       description: '',
-      caseOption: 'Website Creation'
+      caseOption: 'Website Creation',
+      options: {
+        method: 'POST',
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Authorization': 'Bearer' + config.API_KEY,
+          'Content-Type': 'application/json'
+        },
+        url: 'https://api.sendgrid.com/v3/mail/send',
+        data: {
+          "personalizations": [{
+            "to": [{
+              "email": "vandiepen.international@gmail.com"
+            }]
+          }],
+          "from": {
+            "email": this.email
+          },
+          "subject": this.name + '-' + this.caseOption + '-' + this.websiteUseCase,
+          "content": [{
+            "type": "text/plain",
+            "value": this.description
+          }]
+        }
+      }
     }
   },
   methods: {
@@ -162,7 +189,15 @@ export default {
       window.location.href = "mailto:vandiepen.international@gmail.com?subject=Website Creation/Maintenance Request"
     },
     sendForm() {
-      
+      if (this.name && this.email) {
+        if (this.description) {
+          axios(this.options)
+        }else{
+          alert('Please fill out all the fields.')
+        }
+      } else {
+        alert('Please fill out all the fields.')
+      }
     }
   }
 };
