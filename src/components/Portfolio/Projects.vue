@@ -1,6 +1,11 @@
 <template>
   <div class="projects">
-    <p class="caption projectsTitle">Projects (Former, Current, Ahead)</p>
+    <div class="columns">
+      <div class="column is-one-third"></div>
+      <div class="colum is-two-thirds projectsContent">
+        <p class="caption projectsTitle">Projects (Former, Current, Ahead)</p>
+      </div>
+    </div>
   </div>
 </template>
 
