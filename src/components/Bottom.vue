@@ -1,21 +1,20 @@
 <template>
-<div class="hero bottom is-flex-widescreen">
-  <p>Leander van Diepen</p>
-  <p>+49 1578 8805638</p>
-  <p>vandiepen.international@gmail.com</p>
-  <p id="git">https://github.com/StrndedLeander</p>
-</div>
+  <div class="hero bottom is-flex-widescreen">
+    <p>Leander van Diepen</p>
+    <p>leandervand@gmail.com</p>
+    <p id="git">https://github.com/StrndedLeander</p>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'Bottom'
-}
+  name: "Bottom"
+};
 </script>
 
 <style scoped>
 .bottom {
-  background-color: #BBBBBB;
+  background-color: #bbbbbb;
   text-align: center;
   margin-top: 15px;
 }

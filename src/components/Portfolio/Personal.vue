@@ -2,15 +2,16 @@
   <div>
     <div class="columns">
       <div class="column is-one-third"></div>
-      <div class="container">
-        <div class="column is-two-thirds">
+      <div class="column is-two-thirds">
+        <div class="container">
           <p class="caption">Insights</p>
           <div class="education">
             <p>
               In summer semester 2017 I was able to get my first experience with university.
-              I participated in the project "Studieren vor dem Abitur" by the Heinrich-Heine University in Düsseldorf.
-              There I took a physics class with the topic of theoretical mechanics. I attended the lectures and exercises and did
-              my best following along despite the high prerequisites in mathematics and physics.
+              <br>I participated in the project "Studieren vor dem Abitur" by the Heinrich-Heine University in Düsseldorf.
+              <br>There I took a physics class with the topic of theoretical mechanics. I attended the lectures and exercises and did
+              <br>my best following along despite the high prerequisites in mathematics and physics.
+              <br>
             </p>
           </div>
         </div>

@@ -1,10 +1,15 @@
 <template>
   <div class="portfolio hero">
-    <About></About>
-    <Personal></Personal>
-    <Projects></Projects>
-    <!-- <Cases></Cases>
-    <Contact></Contact>-->
+    <div class="desktop">
+      <About></About>
+      <Personal class="module"></Personal>
+      <Projects class="module"></Projects>
+    </div>
+    <div class="touch">
+      <AboutMobile></AboutMobile>
+      <PersonalMobile class="module"></PersonalMobile>
+      <ProjectsMobile class="module"></ProjectsMobile>
+    </div>
   </div>
 </template>
 
@@ -12,17 +17,19 @@
 import About from "./Portfolio/About";
 import Personal from "./Portfolio/Personal";
 import Projects from "./Portfolio/Projects";
-// import Contact from "./Portfolio/Contact";
-// import Cases from "./Portfolio/Cases";
+import AboutMobile from "./Portfolio/mobile/AboutMobile";
+import PersonalMobile from "./Portfolio/mobile/PersonalMobile";
+import ProjectsMobile from "./Portfolio/mobile/ProjectsMobile";
 
 export default {
   name: "Portfolio",
   components: {
     Projects,
     About,
-    Personal
-    // Contact,
-    // Cases
+    Personal,
+    ProjectsMobile,
+    PersonalMobile,
+    AboutMobile
   }
 };
 </script>
@@ -31,5 +38,8 @@ export default {
 .hero {
   width: 90%;
   height: 90%;
+}
+.module {
+  margin: 10px 0 10px 0;
 }
 </style>

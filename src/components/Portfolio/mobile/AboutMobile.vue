@@ -1,9 +1,9 @@
 <template>
-  <div class="desktop">
+  <div class="about touch">
     <div class="columns">
       <div class="column is-one-third aboutPicture">
         <figure class="image is-600x600">
-          <img src="../../assets/Portfolio-Pic.png">
+          <img src="../../../assets/Portfolio-Pic.png">
         </figure>
       </div>
       <div class="column is-two-thirds">
@@ -59,6 +59,7 @@ export default {};
   vertical-align: middle;
 }
 
-.inner {
+p {
+  font-size: 25px;
 }
 </style>

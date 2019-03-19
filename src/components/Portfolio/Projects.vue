@@ -2,8 +2,19 @@
   <div class="projects">
     <div class="columns">
       <div class="column is-one-third"></div>
-      <div class="colum is-two-thirds projectsContent">
-        <p class="caption projectsTitle">Projects (Former, Current, Ahead)</p>
+      <div class="container">
+        <div class="column is-two-thirds">
+          <p class="caption">Projects</p>
+          <!-- <div class="columns">
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+          </div>-->
+          <p>
+            For more information check out my
+            <a href="https://github.com/StrndedLeander">GitHub</a>.
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -14,9 +25,9 @@ export default {};
 </script>
 
 <style scoped>
-.projectsTitle {
-  color: #707070;
+.caption {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 110%;
-  margin: 17px 0 17px 50px;
+  margin: 17px 0 17px 0;
 }
 </style>
