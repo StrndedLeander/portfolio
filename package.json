@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploys3": "aws s3 --profile portfolio sync ./src/dist/ s3://vdti.net --region eu-central-1"
+    "deploys3": "aws s3 --profile portfolio sync ./dist/ s3://vdti.net --region eu-central-1"
   },
   "dependencies": {
     "axios": "^0.18.0",

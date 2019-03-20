@@ -13,7 +13,7 @@ export default {};
 
 <style scoped>
 .header {
-  max-width: 100vw;
+  width: 100vw;
   height: 80px;
   border: 1px grey solid;
   text-align: center;
