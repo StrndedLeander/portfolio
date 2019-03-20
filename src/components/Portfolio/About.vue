@@ -1,5 +1,5 @@
 <template>
-  <div class="desktop">
+  <div class="about is-block-desktop-only is-inline-touch">
     <div class="columns">
       <div class="column is-one-third aboutPicture">
         <figure class="image is-600x600">
@@ -9,7 +9,7 @@
       <div class="column is-two-thirds">
         <div class="aboutContent">
           <div class="container middle">
-            <div class="about">
+            <div class="aboutText">
               <p class="caption aboutTitle">About</p>
               <p
                 class="aboutText"
@@ -46,12 +46,11 @@ export default {};
   width: 100%;
 }
 
-.about {
+.aboutText {
   vertical-align: middle;
   margin-left: auto;
   margin-right: auto;
-  width: 62vw;
-  /*whatever width you want*/
+  width: 80vw;
 }
 
 .middle {

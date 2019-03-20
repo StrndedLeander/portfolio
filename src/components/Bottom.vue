@@ -1,8 +1,10 @@
 <template>
-  <div class="hero bottom is-flex-widescreen">
-    <p>Leander van Diepen</p>
-    <p>leandervand@gmail.com</p>
-    <p id="git">https://github.com/StrndedLeander</p>
+  <div class="hero bottom is-block-desktop-only is-flex-touch">
+    <div class="container bottomInfo">
+      <p>Leander van Diepen</p>
+      <p>leandervand@gmail.com</p>
+      <p id="git">https://github.com/StrndedLeander</p>
+    </div>
   </div>
 </template>
 
@@ -18,7 +20,10 @@ export default {
   text-align: center;
   margin-top: 15px;
 }
-
+.bottomInfo {
+  margin-left: auto;
+  margin-right: auto;
+}
 p {
   margin: 22px 0 0 0;
   color: black;

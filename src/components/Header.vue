@@ -1,29 +1,8 @@
 <template>
-  <div class="hero header is-flex-widescreen">
-    <div class="columns">
-      <div class="column is-two-fifths"></div>
-      <div class="column">
-        <div class="title">
-          <p class="brand">Leander van Diepen</p>
-          <p class="desc">Software Development</p>
-        </div>
-      </div>
-      <!-- <div class="column navigation">
-        <div class="columns">
-          <div class="column">
-            <p>About</p>
-          </div>
-          <div class="column">
-            <p>Projects</p>
-          </div>
-          <div class="column">
-            <p>Cases</p>
-          </div>
-          <div class="column">
-            <p>Contact</p>
-          </div>
-      </div>-->
-      <!-- </div> -->
+  <div class="hero header is-block-desktop-only is-flex-touch">
+    <div class="title">
+      <p class="brand">Leander van Diepen</p>
+      <p class="desc">Software Development</p>
     </div>
   </div>
 </template>
@@ -45,6 +24,8 @@ export default {};
   width: 261px;
   height: 31px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .title .brand {
@@ -59,10 +40,5 @@ export default {};
   color: #707070;
   font-size: 35%;
   padding-top: 10px;
-}
-
-.navigation {
-  margin-top: 31px;
-  margin-right: 228px;
 }
 </style>
