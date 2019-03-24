@@ -1,8 +1,8 @@
 <template>
   <div class="hero header is-block-desktop-only is-flex-touch">
     <div class="title">
-      <p class="brand">Leander van Diepen</p>
-      <p class="desc">Software Development</p>
+      <p class="brand is-size-4">Leander van Diepen</p>
+      <p class="desc is-size-6">Software Development</p>
     </div>
   </div>
 </template>
@@ -13,7 +13,6 @@ export default {};
 
 <style scoped>
 .header {
-  width: 100vw;
   height: 80px;
   border: 1px grey solid;
   text-align: center;
@@ -21,8 +20,6 @@ export default {};
 }
 
 .title {
-  width: 261px;
-  height: 31px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-left: auto;
   margin-right: auto;
@@ -31,14 +28,12 @@ export default {};
 .title .brand {
   font-weight: 400;
   color: #707070;
-  font-size: 65%;
   margin-top: 12px;
 }
 
 .title .desc {
   font-weight: 400;
   color: #707070;
-  font-size: 35%;
   padding-top: 10px;
 }
 </style>

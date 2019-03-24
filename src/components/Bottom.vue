@@ -1,9 +1,11 @@
 <template>
   <div class="hero bottom is-block-desktop-only is-flex-touch">
-    <div class="container bottomInfo">
+    <div class="container bottomInfo has-text-centered">
       <p>Leander van Diepen</p>
       <p>leandervand@gmail.com</p>
-      <p id="git">https://github.com/StrndedLeander</p>
+      <p id="git">
+        <a href="https://github.com/StrndedLeander">https://github.com/StrndedLeander</a>
+      </p>
     </div>
   </div>
 </template>
@@ -17,7 +19,6 @@ export default {
 <style scoped>
 .bottom {
   background-color: #bbbbbb;
-  text-align: center;
   margin-top: 15px;
 }
 .bottomInfo {
@@ -26,6 +27,9 @@ export default {
 }
 p {
   margin: 22px 0 0 0;
+  color: black;
+}
+a {
   color: black;
 }
 
