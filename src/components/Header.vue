@@ -16,24 +16,23 @@ export default {};
   height: 80px;
   border: 1px grey solid;
   text-align: center;
-  color: #707070;
+  background-color: #1b1b1b;
 }
 
 .title {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-left: auto;
   margin-right: auto;
+  color: #ce2c9d;
 }
 
 .title .brand {
   font-weight: 400;
-  color: #707070;
   margin-top: 12px;
 }
 
 .title .desc {
   font-weight: 400;
-  color: #707070;
   padding-top: 10px;
 }
 </style>

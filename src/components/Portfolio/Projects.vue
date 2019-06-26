@@ -1,25 +1,16 @@
 <template>
-  <div class="projects is-block-desktop-online is-inline-touch">
-    <div class="columns">
-      <div class="column is-one-third"></div>
-      <div class="container">
-        <div class="column is-two-thirds">
-          <div class="projectsContent">
-            <p class="caption is-size-4-touch is-size-4-desktop">Projects</p>
-            <!-- <div class="columns">
+  <div class="projects container is-marginless">
+    <div class="projectsContent is-marginless">
+      <p class="caption is-size-4-touch is-size-4-desktop">Projects</p>
+      <!-- <div class="columns">
             <div class="column"></div>
             <div class="column"></div>
             <div class="column"></div>
-            </div>-->
-            <p
-              class="is-size-5-touch is-size-5-desktop has-text-justified-touch has-text-left-desktop"
-            >
-              For more information check out my
-              <a href="https://github.com/StrndedLeander">GitHub</a>.
-            </p>
-          </div>
-        </div>
-      </div>
+      </div>-->
+      <p class="is-size-5-touch is-size-5-desktop has-text-justified-touch has-text-left-desktop">
+        For more information check out my
+        <a href="https://github.com/StrndedLeander">GitHub</a>.
+      </p>
     </div>
   </div>
 </template>
