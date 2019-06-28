@@ -24,13 +24,16 @@ export default {
 #app {
   margin: 0;
   padding: 0;
-  background-color: #c7d3d3;
   color: #1a1a1a;
+  background-color: #ffcf98;
   height: 100vh;
+  overflow-x: hidden;
 }
-.bottom{
-  bottom: 0;
-  position: fixed;
-  width: 100%;
+@media screen and (min-width: 769px) {
+  .bottom {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+  }
 }
 </style>

@@ -1,7 +1,6 @@
 <template>
   <div class="projects container is-marginless">
-    <div class="projectsContent is-marginless">
-      <p class="caption is-size-4-touch is-size-4-desktop">Projects</p>
+      <p class="caption is-size-4-touch is-size-3-desktop has-text-left">PROJECTS</p>
       <!-- <div class="columns">
             <div class="column"></div>
             <div class="column"></div>
@@ -11,7 +10,6 @@
         For more information check out my
         <a href="https://github.com/StrndedLeander">GitHub</a>.
       </p>
-    </div>
   </div>
 </template>
 
@@ -20,24 +18,24 @@ export default {};
 </script>
 
 <style scoped>
-.caption {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 17px 0 17px 0;
-}
-.projectsContent {
-  margin-left: auto;
-  margin-right: auto;
-  width: 85vw;
-}
-@media only screen and (min-width: 960px) {
-  .caption {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 17px 0 17px 0;
+@media screen and (min-width: 769px) {
+  .container {
+    max-width: 60vw;
   }
-  .projectsContent {
-    margin-left: auto;
-    margin-right: auto;
-    width: 60vw;
+  .caption {
+    margin-top: 2%;
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container > p {
+    max-width: 95vw;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+  .caption {
+    margin-bottom: 5%;
   }
 }
 </style>

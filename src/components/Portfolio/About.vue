@@ -1,22 +1,17 @@
 <template>
   <div class="about container is-marginless">
-    <div class="aboutContent">
-      <div class="middle">
-        <div class="aboutText is-marginless">
-          <p class="caption is-size-3-touch is-size-3-desktop has-text-centered">About</p>
-          <p
-            class="is-size-5-touch is-size-5-desktop has-text-justified-touch has-text-justified-desktop"
-          >
-            My name is Leander van Diepen I am 19 years old and I am a fullstack web-developer from Germany.
-            This website is inteded to become a platform that centralizes the products I build.
-            <br>I've been programming since I am 13 years old and I have been doing web development for two and a half years.
-            <br>Right now I am building mostly single-page webapplications.
-            The technologies I use for that are VueJs as my client-side and NodeJs as my server-sided backend code.
-            <br>I want to build products that combine: Supporting peoples individuality and better social cohabit on all levels.
-          </p>
-        </div>
-      </div>
-    </div>
+    <p class="caption is-size-4-touch is-size-3-desktop has-text-left">ABOUT - ME & MY VISION</p>
+    <p
+      class="is-size-6-touch is-size-5-desktop has-text-justified-touch has-text-justified-desktop"
+    >
+      My name is Leander van Diepen I am 19 years old and I am a fullstack web-developer from Germany.
+      I have been programming for seven years now. I have tried out development in various fields such as games, apps, ai and web. I haven't been able to release any serious projects to the public but this will change in the near future.<br>
+      This website is inteded to become a platform that centralizes the products I build.<br><br>
+      The Apps, Websites and Products will be built on enhancing each other, through their data, functionalities and interfaces.<br>
+      My current project is an online-education platform, which will help schools with digitization and digitilization and improve the way students learn, collaborate and interact.<br><br>
+      I am an enterpreneur!<br> I believe that you can call yourself an enterpreneur as soon as you start working for yourself and your dreams. I have got the urge to change our civilisation for the better.
+      I want to build products that help solving the big questions of humanity. That is what my generation has to and will do.<br> I want to be part of that!
+    </p>
   </div>
 </template>
 
@@ -25,50 +20,24 @@ export default {};
 </script>
 
 <style scoped>
-.caption {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 17px 0 17px 0;
-}
-
-.aboutContent {
-  display: table;
-  height: 100%;
-  width: 100%;
-}
-
-.aboutText {
-  vertical-align: middle;
-  margin-left: auto;
-  margin-right: auto;
-  width: 85vw;
-}
-
-.middle {
-  display: table-cell;
-  vertical-align: middle;
-}
-@media only screen and (min-width: 960px) {
+@media screen and (min-width: 769px) {
+  .container {
+    max-width: 60vw;
+  }
   .caption {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 17px 0 17px 0;
+    margin-top: 2%;
+    margin-bottom: 5%;
   }
+}
 
-  .aboutContent {
-    display: table;
-    height: 100%;
-    width: 100%;
+@media screen and (max-width: 768px) {
+  .container > p {
+    max-width: 95vw;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
   }
-
-  .aboutText {
-    vertical-align: middle;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60vw;
-  }
-
-  .middle {
-    display: table-cell;
-    vertical-align: middle;
+  .caption {
+    margin-bottom: 5%;
   }
 }
 </style>

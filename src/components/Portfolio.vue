@@ -2,24 +2,20 @@
   <div class="portfolio hero">
     <div class="columns">
       <div class="column is-one-third container">
-        <figure class="image">
+        <figure class="image is-paddingless">
           <img src="../assets/Portfolio-Pic.png">
         </figure>
       </div>
-      <div class="column">
-        <carousel
-          class="carousel"
-          :perPage="1"
-          :controls="true"
-        >
+      <div class="column is-two-thirds">
+        <carousel :perPage="1" :scrolPerPage="false" :paginationSize="12">
           <slide>
             <About></About>
           </slide>
           <slide>
-            <Personal class="module"></Personal>
+            <Personal></Personal>
           </slide>
           <slide>
-            <Projects class="module"></Projects>
+            <Projects></Projects>
           </slide>
         </carousel>
       </div>
@@ -35,9 +31,9 @@ import { Carousel, Slide } from "vue-carousel";
 export default {
   name: "Portfolio",
   components: {
-    Projects,
     About,
     Personal,
+    Projects,
     Carousel,
     Slide
   }
@@ -45,7 +41,21 @@ export default {
 </script>
 
 <style scoped>
-.module {
-  margin: 10px 0 10px 0;
+.portfolio{
+  background-color: #ffcf98;
+}
+@media screen and (max-width: 768px){
+  .is-one-third{
+    transform: scale(0.95,0.95);
+  }
+  .is-two-thirds{
+    margin-bottom: 25%;
+  }
+}
+@media screen and (min-width: 769px){
+  .is-one-third{
+    height: 100%;
+    margin-top: 2%;
+  }
 }
 </style>

@@ -2,7 +2,7 @@
   <div class="hero header is-block-desktop-only is-flex-touch">
     <div class="title">
       <p class="brand is-size-4">Leander van Diepen</p>
-      <p class="desc is-size-6">Software Development</p>
+      <p class="desc is-size-7">Enterpreneur | Founder | Fullstack Developer</p>
     </div>
   </div>
 </template>
@@ -23,7 +23,7 @@ export default {};
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-left: auto;
   margin-right: auto;
-  color: #ce2c9d;
+  color: #ffcf98;
 }
 
 .title .brand {
