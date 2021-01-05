@@ -9,7 +9,7 @@
     "deploys3": "aws s3 --profile portfolio sync ./dist/ s3://vdti.net --region eu-central-1"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bulma": "^0.7.2",
     "vue": "^2.5.21",
     "vue-carousel": "^0.18.0",
